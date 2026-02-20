@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#drawing-board {
+    border: black 1px solid;
+    height: 600px;
+    width: 600px;
+}
