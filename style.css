@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -11,4 +15,11 @@ body {
     border: black 1px solid;
     height: 600px;
     width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    flex: 0 0 10%;
+    border: 0.5px grey solid;
 }
