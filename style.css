@@ -20,6 +20,5 @@ body {
 }
 
 .square {
-    flex: 0 0 10%;
     border: 0.5px grey solid;
 }
