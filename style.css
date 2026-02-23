@@ -32,28 +32,20 @@ body {
     justify-content: space-around;
 }
 
-#pick-black {
-    background-color: black;
+.color { 
     flex: 0 1 40px;
     height: 40px;
 }
+
+#pick-black {
+    background-color: black;
+}
 #pick-red {
     background-color: red;
-    flex: 0 1 40px;
-        height: 40px;
-
-
 }
 #pick-green {
     background-color: green;
-    flex: 0 1 40px;
-        height: 40px;
-
-
 }
 #pick-blue {
     background-color: blue; 
-    flex: 0 1 40px;
-        height: 40px;
-
 }
