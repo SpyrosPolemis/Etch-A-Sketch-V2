@@ -9,12 +9,12 @@ for(let i = 0; i < numberOfSquares; i++) {
 }
 
 let currectColor = "black"
-let mouseDown = 0;
+let mouseDown = false;
 document.body.onmousedown = function() { 
-  ++mouseDown;
+  mouseDown = true;
 }
 document.body.onmouseup = function() {
-  --mouseDown;
+  mouseDown = false;
 }
  
 // Drawing
