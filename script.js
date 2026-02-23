@@ -22,3 +22,18 @@ clearBtn.onclick = () => {
         square.style["opacity"] = 0
     })
 }
+
+const colorPickers = document.querySelectorAll(".color")
+let currectColor = "black"
+colorPickers.forEach((colorPicker) => {
+    colorPicker.addEventListener("click", (e) => {
+        currectColor = (e.target.id)
+        console.log("Test")
+        drawingSquares.forEach((square) => {
+            if(square.style.opacity == 0) {
+                square.style.backgroundColor = currectColor
+                console.log("working")
+            }
+        })
+    })
+})

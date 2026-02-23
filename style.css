@@ -37,15 +37,15 @@ body {
     height: 40px;
 }
 
-#pick-black {
+#black {
     background-color: black;
 }
-#pick-red {
+#red {
     background-color: red;
 }
-#pick-green {
+#green {
     background-color: green;
 }
-#pick-blue {
+#blue {
     background-color: blue; 
 }
