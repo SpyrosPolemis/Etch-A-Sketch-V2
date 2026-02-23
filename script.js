@@ -1,3 +1,4 @@
+// Dynamically create drawing board grid
 const drawingBoard = document.querySelector("#drawing-board");
 const numberOfSquares = 400;
 for(let i = 0; i < numberOfSquares; i++) {
@@ -7,6 +8,7 @@ for(let i = 0; i < numberOfSquares; i++) {
     drawingBoard.appendChild(square)
 }
 
+// Drawing
 const drawingSquares = document.querySelectorAll(".square");
 drawingSquares.forEach((square) => {
     square.addEventListener("mouseover", () => {
@@ -16,6 +18,7 @@ drawingSquares.forEach((square) => {
     })
 })
 
+// Clear button
 const clearBtn = document.querySelector("#clear-btn")
 clearBtn.onclick = () => {
     drawingSquares.forEach((square) => {
@@ -24,6 +27,7 @@ clearBtn.onclick = () => {
     })
 }
 
+// Color Pickers
 const colorPickers = document.querySelectorAll(".color")
 let currectColor = "black"
 colorPickers.forEach((colorPicker) => {
