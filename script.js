@@ -12,9 +12,11 @@ for(let i = 0; i < numberOfSquares; i++) {
 const drawingSquares = document.querySelectorAll(".square");
 drawingSquares.forEach((square) => {
     square.addEventListener("mouseover", () => {
-        let opacity = Number(square.style["opacity"])
-        opacity += 0.2
-        square.style["opacity"] = opacity
+        if(square.style.backgroundColor == currectColor) {
+            let opacity = Number(square.style["opacity"])
+            opacity += 0.2
+            square.style["opacity"] = opacity
+        }
     })
 })
 
