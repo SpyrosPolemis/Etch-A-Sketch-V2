@@ -8,10 +8,23 @@ for(let i = 0; i < numberOfSquares; i++) {
     drawingBoard.appendChild(square)
 }
 
+let currectColor = "black"
+let mouseDown = 0;
+document.body.onmousedown = function() { 
+  ++mouseDown;
+}
+document.body.onmouseup = function() {
+  --mouseDown;
+}
+ 
 // Drawing
 const drawingSquares = document.querySelectorAll(".square");
 drawingSquares.forEach((square) => {
     square.addEventListener("mouseover", () => {
+        if (mouseDown) {
+                square.style["background-color"] = currectColor
+                console.log(currectColor)
+        }
         if(square.style.backgroundColor == currectColor) {
             let opacity = Number(square.style["opacity"])
             opacity += 0.2
@@ -31,15 +44,12 @@ clearBtn.onclick = () => {
 
 // Color Pickers
 const colorPickers = document.querySelectorAll(".color")
-let currectColor = "black"
 colorPickers.forEach((colorPicker) => {
     colorPicker.addEventListener("click", (e) => {
         currectColor = (e.target.id)
-        console.log("Test")
         drawingSquares.forEach((square) => {
             if(square.style.opacity == 0) {
                 square.style.backgroundColor = currectColor
-                console.log("working")
             }
         })
     })
