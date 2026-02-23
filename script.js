@@ -20,6 +20,7 @@ const clearBtn = document.querySelector("#clear-btn")
 clearBtn.onclick = () => {
     drawingSquares.forEach((square) => {
         square.style["opacity"] = 0
+        square.style["background-color"] = "black"
     })
 }
 
